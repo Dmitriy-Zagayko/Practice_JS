@@ -1,0 +1,54 @@
+body {
+	background-color: rgb(176, 173, 196);
+	font-family: "Pacifico", cursive;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	font-size: 28px;
+}
+.button__generate, .button__reset {
+	text-decoration: none;
+	display: inline-block;
+	width: 140px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 45px;
+	margin: 20px 20px 10px 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	color: #070707;
+	background: rgb(226, 220, 220);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	transition: .3s; 
+	outline: none !important;
+}
+.button__generate:hover {
+	background: #9fe52e;
+	box-shadow: 0 15px 20px rgba(229, 119, 46, 0.4);
+	color: white;
+	transform: translateY(-7px);
+	}
+.button__reset:hover {
+	background: #ee3f3f;
+	box-shadow: 0 15px 20px rgba(229, 119, 46, 0.4);
+	color: white;
+	transform: translateY(-7px);
+}
+.button__generate:disabled {
+	background: gray;
+}
+.input__max-number {
+	margin-top: 15px;
+}
+.input__min-number:focus {
+	outline: 2px groove rgb(235, 171, 118);
+}
+.input__max-number:focus {
+	outline: 2px ridge rgb(126, 58, 2);
+}
