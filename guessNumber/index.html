@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Guess Number</title>
+</head>
+<body>
+	<header class="header"></header>
+	<main class="main">
+		<div class="greeting__text">
+			<p class="greeting__text-rules">Привет, проверим твою интуицию?</p>
+			<p class="greeting__text-rules">Я загадаю число, в выбранном тобой диапазоне.</p>
+			<p class="greeting__text-rules">Введи количество попыток, за которое, ты думаешь, что сможешь его угадать.</p>
+		</div>
+		<div class="input">
+			<input type="number" class="input__number-of-attempts" value="0">
+			<button class="helpers" data-tooltip="Уравняем шансы. Количество попыток должно быть от 1 до 15!">&#9888</button>
+		</div>
+		<div class="output">
+			<p class="output__check-input-of-attemps"></p>
+		</div>
+		<div class="input">
+			<p class="input__min-number-text">Введи минимальное число диапазона:</p>
+			<input type="number" class="input__min-number" title="Начинай с 1-го" value="0">
+			<button class="helpers" data-tooltip="Диапазон должен быть от 0 до 199!">&#9888</button>
+		</div>
+		<div class="output">
+			<p class="output__check-input-of-min-number"></p>
+		</div>
+		<div class="input">
+			<p class="input__max-number-text">Введи максимальное число диапазона:</p>
+			<input type="number" class="input__max-number" title="Больше 200 не надо" value="1">
+			<button class="helpers" data-tooltip="Диапазон должен быть от 1 до 200!">&#9888</button>
+		</div>
+		<div class="output">
+			<p class="output__check-input-of-max-number"></p>
+		</div>
+		<div class="input">
+			<p class="input__guessed-number-text">А теперь можем начать!</p>
+			<input type="number" class="input__guessed-number" title="Ну-ка, удиви" value="0">
+			<button class="helpers" data-tooltip="Вводи число и жми кнопку 'Поехали'">&#9888</button>
+		</div>
+		<div class="output">
+			<p class="output__help-text"></p>
+		</div>
+		<div class="button__section">
+			<button class="button__section-generate" title="Проверяй!">Поехали</button>
+			<button type="reset" class="button__section-exit" title="Я сдаюсь...или хочу еще?">Заново</button>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+	<script src="script.js"></script>
+</body>
+</html>
